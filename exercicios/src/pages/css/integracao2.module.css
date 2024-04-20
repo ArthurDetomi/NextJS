@@ -1,0 +1,20 @@
+#integracao2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font:50px;
+    padding: 20px;
+}
+
+.laranja {
+    color: orange;
+}
+
+.roxo {
+    color: purple;
+}
+
+.marrom {
+    color: brown;
+}
