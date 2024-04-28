@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import ContadorDisplay from "../../../components/ContadorDisplay";
+import { useState } from "react";
+import NumeroDisplay from "../../../components/NumeroDisplay";
 
 export default function megasena() {
   const QTD_MINIMA_APOSTA = 6;
@@ -38,11 +38,10 @@ export default function megasena() {
   return (
     <div>
       <h1>MegaSena</h1>
-      <div>
-        {apostaAleatoria.map((value, index) => (
-          <ContadorDisplay key={index} numero={value} />
-        ))}
-      </div>
+
+      {apostaAleatoria.map((value) => (
+        <NumeroDisplay key={value} numero={value} />
+      ))}
 
       <button onClick={() => setApostaAleatoria(gerarNovosNumerosAleatorios())}>
         Gerar aposta aleátoria
